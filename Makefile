@@ -29,3 +29,9 @@ stop:
 	pkill -f target/logic
 	pkill -f target/job
 	pkill -f target/comet
+
+up:
+	docker-compose up -d
+
+down:
+	docker-compose down
