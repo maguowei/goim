@@ -1,29 +1,17 @@
-# IDE ignore
-.idea/
-*.ipr
-*.iml
-*.iws
-.vscode/
-
-# temp ignore
-*.log
-*.cache
-*.diff
+# Binaries for programs and plugins
 *.exe
 *.exe~
-*.patch
-*.tmp
-*.swp
+*.dll
+*.so
+*.dylib
 
-# system ignore
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
 .DS_Store
-Thumbs.db
-
-# build
-/cmd/comet/comet
-/cmd/logic/logic
-/cmd/job/job
-/target
-/configs
-/dist
-/vendor
+/vendor/
+.idea/
+.vscode/
