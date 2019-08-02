@@ -40,7 +40,7 @@
 
 [kafka]
     topic = "goim-push-topic"
-    brokers = ["kafka:9092"]
+    brokers = ["kafka:29092"]
 
 [redis]
     network = "tcp"
