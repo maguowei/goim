@@ -1,4 +1,4 @@
-goim v2.0
+goim
 ==============
 
 goim is a im server writen by golang.
@@ -28,14 +28,13 @@ make up
 ### Dependencies
 
 - [Discovery](https://github.com/bilibili/discovery)
-- [Kafka](https://kafka.apache.org/quickstart)
+- Kafka
+- Redis
 
 
 ## Examples
 
-- Websocket: [Websocket Client Demo](https://github.com/Terry-Mao/goim/tree/master/examples/javascript)
-- Android: [Android](https://github.com/roamdy/goim-sdk)
-- iOS: [iOS](https://github.com/roamdy/goim-oc-sdk)
+- Websocket: [Websocket Client Demo](examples/javascript)
 
 ## 文档
-[push http协议文档](./docs/push.md) 推送接口
+[push http协议文档](docs/push.md) 推送接口
