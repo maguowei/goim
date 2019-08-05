@@ -6,54 +6,27 @@ goim v2.0
 
 goim is a im server writen by golang.
 
-## Features
- * Light weight
- * High performance
- * Pure Golang
- * Supports single push, multiple push and broadcasting
- * Supports one key to multiple subscribers (Configurable maximum subscribers count)
- * Supports heartbeats (Application heartbeats, TCP, KeepAlive, HTTP long pulling)
- * Supports authentication (Unauthenticated user can't subscribe)
- * Supports multiple protocols (WebSocket，TCP，HTTP）
- * Scalable architecture (Unlimited dynamic job and logic modules)
- * Asynchronous push notification based on Kafka
-
+## 特性
+ * 轻量级
+ * 高性能
+ * 纯Golang实现
+ * 支持单个、多个、单房间以及广播消息推送
+ * 支持单个Key多个订阅者（可限制订阅者最大人数）
+ * 心跳支持（应用心跳和tcp、keepalive）
+ * 支持安全验证（未授权用户不能订阅）
+ * 多协议支持（websocket，tcp）
+ * 可拓扑的架构（job、logic模块可动态无限扩展）
+ * 基于Kafka做异步消息推送
+ 
 ## Architecture
 ![arch](./docs/arch.png)
 
 ## Quick Start
 
-### Build
+```bash
+make build
+make up
 ```
-    make build
-```
-
-### Run
-```
-    make run
-    make stop
-
-    // or
-    nohup target/logic -conf=target/logic.toml -region=sh -zone=sh001 -deploy.env=dev -weight=10 2>&1 > target/logic.log &
-    nohup target/comet -conf=target/comet.toml -region=sh -zone=sh001 -deploy.env=dev -weight=10 -addrs=127.0.0.1 2>&1 > target/logic.log &
-    nohup target/job -conf=target/job.toml -region=sh -zone=sh001 -deploy.env=dev 2>&1 > target/logic.log &
-
-```
-### Environment
-```
-    env:
-    export REGION=sh
-    export ZONE=sh001
-    export DEPLOY_ENV=dev
-
-    supervisor:
-    environment=REGION=sh,ZONE=sh001,DEPLOY_ENV=dev
-
-    go flag:
-    -region=sh -zone=sh001 deploy.env=dev
-```
-### Configuration
-You can view the comments in target/comet.toml,logic.toml,job.toml to understand the meaning of the config.
 
 ### Dependencies
 [Discovery](https://github.com/bilibili/discovery)
@@ -73,6 +46,9 @@ Websocket: [Websocket Client Demo](https://github.com/Terry-Mao/goim/tree/master
 Android: [Android](https://github.com/roamdy/goim-sdk)
 
 iOS: [iOS](https://github.com/roamdy/goim-oc-sdk)
+
+## 文档
+[push http协议文档](./docs/push.md)推送接口
 
 ## Benchmark
 ![benchmark](./docs/benchmark.jpg)
@@ -101,6 +77,3 @@ iOS: [iOS](https://github.com/roamdy/goim-oc-sdk)
 [中文](./docs/benchmark_cn.md)
 
 [English](./docs/benchmark_en.md)
-
-## LICENSE
-goim is is distributed under the terms of the MIT License.
