@@ -9,14 +9,14 @@ import (
 	"strconv"
 	"syscall"
 
-	"github.com/bilibili/discovery/naming"
-	resolver "github.com/bilibili/discovery/naming/grpc"
 	"github.com/Terry-Mao/goim/internal/logic"
 	"github.com/Terry-Mao/goim/internal/logic/conf"
 	"github.com/Terry-Mao/goim/internal/logic/grpc"
 	"github.com/Terry-Mao/goim/internal/logic/http"
 	"github.com/Terry-Mao/goim/internal/logic/model"
 	"github.com/Terry-Mao/goim/pkg/ip"
+	"github.com/bilibili/discovery/naming"
+	resolver "github.com/bilibili/discovery/naming/grpc"
 	log "github.com/golang/glog"
 )
 

@@ -5,9 +5,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/bilibili/discovery/naming"
 	"github.com/BurntSushi/toml"
 	xtime "github.com/Terry-Mao/goim/pkg/time"
+	"github.com/bilibili/discovery/naming"
 )
 
 var (

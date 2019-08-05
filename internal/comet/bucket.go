@@ -88,7 +88,7 @@ func (b *Bucket) ChangeRoom(nrid string, ch *Channel) (err error) {
 	if oroom != nil && oroom.Del(ch) {
 		b.DelRoom(oroom)
 	}
-	
+
 	if err = nroom.Put(ch); err != nil {
 		return
 	}

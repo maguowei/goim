@@ -7,7 +7,7 @@ import (
 	pb "github.com/Terry-Mao/goim/api/logic/grpc"
 	"github.com/gogo/protobuf/proto"
 	log "github.com/golang/glog"
-	sarama "gopkg.in/Shopify/sarama.v1"
+	"gopkg.in/Shopify/sarama.v1"
 )
 
 // PushMsg push a message to databus.
