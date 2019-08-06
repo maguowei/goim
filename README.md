@@ -38,3 +38,12 @@ make up
 
 ## 文档
 [push http协议文档](docs/push.md) 推送接口
+
+## 参考资料
+
+- [goim 中的 data flow 数据流转及思考](https://juejin.im/post/5cd12fa16fb9a0320b40ec32)
+- [goim-wiki architecture and Customization](https://github.com/Terry-Mao/goim/wiki/architecture-and-Customization)
+- [accept Rooms](https://github.com/Terry-Mao/goim/issues/298)
+- [goim v2.0 Roadmap](https://github.com/Terry-Mao/goim/issues/235)
+- [请问避免客户端重复登录](https://github.com/Terry-Mao/goim/issues/210)
+- [发送消息设计问题](https://github.com/Terry-Mao/goim/issues/185)
